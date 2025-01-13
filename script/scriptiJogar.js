@@ -62,7 +62,10 @@ let lojaFabricas = [
 
 
 function atualziaDinheiro(){
-  if(localStorage.getItem('dinheiroUsuario') !== null){
+  if(localStorage.getItem('dinheiroUsuario') != null ){
+    localStorage.setItem('dinheiroUsuario',dinheiro.toString())
+  }
+  else{
     localStorage.setItem('dinheiroUsuario',dinheiro.toString())
   }
 }
@@ -480,3 +483,4 @@ wallpapers();
 upgrades();
 upgradesTempo();
 money();
+atualziaDinheiro();
