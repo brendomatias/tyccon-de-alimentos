@@ -13,6 +13,7 @@
   color: rgb(97, 13, 13);
   border: solid rgb(66, 3, 3) 2px;
   transition: 0.3s;
+  z-index: 5;
 }
 .alertaItem::before{
   content: '';
@@ -21,4 +22,12 @@
   background-color: black;
   position: absolute;
   top: 2rem;
+}
+
+@media (max-width:500px){
+  .alertaItem{
+    right: 18%;
+    top:  5rem;
+  }
+  
 }

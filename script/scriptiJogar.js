@@ -1,8 +1,16 @@
+
+if(localStorage.getItem('dinheiroUsuario') > 0){
+  var dinheiro = Number(localStorage.getItem('dinheiroUsuario'))
+}
+else{
+  var dinheiro = 0
+}
+
+
 let fundoCor = true;
 let pocicao = -1;
 let i = 0;
 let multiplicado = 1;
-let dinheiro = 0;
 let cont = [0,0,0,0,0,0,0,0,0,0,0]
 let precos = [10,25,50,100,200,400,800,1600,3000,5000]
 let receber = [1,3,7,15,30,60,120,250,500,1000,2000]
@@ -50,6 +58,15 @@ let lojaFabricas = [
   ['Fábrica de Pizza','3.000,00','Fábrica de Pizza Queijo derretido, massa perfeita e sabores incríveis, a pedida ideal para compartilhar momentos especiais',"/img/pizza.png"],
   ['Fábrica de Peru','5.000,00','Fábrica de Peru Suculento, temperado na medida certa e cheio de sabor, o prato perfeito para ocasiões que merecem celebração',"/img/peru.png"]
 ]
+
+
+
+function atualziaDinheiro(){
+  if(localStorage.getItem('dinheiroUsuario') !== null){
+    localStorage.setItem('dinheiroUsuario',dinheiro.toString())
+  }
+}
+
 
 function wallpapers(){
   for(let i =1;i<=13;i++){
@@ -245,10 +262,14 @@ function vender(numero){
     dinheiro += receber[posicao.textContent]*Number(quantidade.textContent);
     money()
   }
+  atualziaDinheiro();
+
 }
 
 function money(){
   document.querySelector('#dinheiro').innerHTML = dinheiro;
+  atualziaDinheiro();
+
 
 }
 
@@ -347,6 +368,7 @@ function comprar(numero){
     aviso();
     setTimeout(avisosumir,3000);
   }
+  atualziaDinheiro();
 }
 
 function comprarUpgradeQuantidade(posicao,numero1,numero2,opcao){
@@ -406,6 +428,7 @@ function comprarUpgradeQuantidade(posicao,numero1,numero2,opcao){
     aviso();
     setTimeout(avisosumir,3000)
   }
+  atualziaDinheiro();
 }
 
 
@@ -450,10 +473,10 @@ function escolhaUpgrades(numero){
   }
 }
 
-money();
 setTimeout(horario,60);
 adicionarFabrica(0)
 adicionarLoja();
 wallpapers();
 upgrades();
 upgradesTempo();
+money();
