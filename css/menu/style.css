@@ -1,0 +1,99 @@
+@import url(/css/global.css);
+
+span{
+  display: block;
+}
+body{
+  display: grid;
+  justify-items: start;
+  color: #000000;
+  background: #fff;
+}
+
+.darkFundo{
+  background-color: black;
+  color: #fff;
+}
+.darkTexto{
+  color: #ffffff;
+}
+
+.input{
+  text-decoration: none;
+  background:  none;
+  border: none;
+  width:20rem;
+  padding: 0.5rem 0;
+  border: 1px solid rgb(221, 237, 0);
+  color: yellow;
+  padding-left: 10px;
+  margin: 0.5rem;
+  transition: 0.3s;
+}
+.input:hover{
+  margin-left: 2rem;
+
+}
+
+
+.opcoes{
+  padding-left: 2rem;
+  padding-top: 6rem;
+  font-size: 3.5rem;
+  display: none;
+  justify-items: start;
+  align-content: start;
+  text-transform: uppercase;
+}
+
+.titulo{
+  font-size: 4rem;
+  padding-bottom: 2rem;
+  position: relative;
+}
+.titulo::before{
+  content: '';
+  display: block;
+  width: 5rem;
+  height: 5rem;
+  position: absolute;
+  background-image: url(/img/bolsa-de-dinheiro.png);
+  background-size: 4rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  right: -3rem;
+  bottom: 1.5rem;
+  z-index: -1;
+}
+.opcao{
+  background: none;
+  color: inherit;
+  font-size: 3.5rem;
+  transition: 0.2s;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.opcao:hover{
+  color: rgba(234, 234, 12, 0.942);
+  margin-left: 2.5rem;
+}
+.opcaoEscuro{
+  font-size: 2rem;
+}
+
+.meu-opcao{
+  display: grid;
+  width: 100%;
+  height: 100%;
+  justify-items: start;
+}
+
+
+.fundo{
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, rgb(4, 156, 29), black);
+  position: absolute;
+  z-index: -1;
+}

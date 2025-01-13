@@ -1,0 +1,49 @@
+.opcoesUpgrades{
+  background-color: rgb(19, 235, 235);
+  color: rgb(18, 41, 61);
+  padding: 1rem;
+  margin: 1rem 0;
+  transition: 0.3s;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.opcoesUpgrades:hover{
+  background-color: rgb(19, 235, 235);
+  padding: 2rem 1rem;
+  margin: 1rem 0;
+}
+.divupgrades{
+  display: none;
+}
+.divupgradesTempo{
+  display: none;
+  height: 35rem;
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+
+.voltarAplicativo{
+  position: absolute;
+  height: 2rem;
+  width: 2rem;
+  top: 6.3rem;
+  right: 1rem;
+  background-image: url(/img/voltar.png);
+  background-color: transparent;
+  background-size: 2rem;
+  cursor: pointer;
+  display: none;
+}
+
+.objetosUpgradesTemp{
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 10px;
+  background-color: rgb(54, 54, 53);
+  border-radius: 0.2rem;
+  margin: 1rem 0;
+  padding: 1rem;
+  
+}
+  

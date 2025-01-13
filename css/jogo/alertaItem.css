@@ -1,0 +1,24 @@
+.alertaItem{
+  width: 14rem;
+  height:  7rem;
+  background-color: red;
+  position: absolute;
+  right: 10%;
+  top:  2rem;
+  border-radius: 0.5rem;
+  display: grid;
+  font-size: 0.9rem;
+  justify-items: center;
+  padding: 0 1rem;
+  color: rgb(97, 13, 13);
+  border: solid rgb(66, 3, 3) 2px;
+  transition: 0.3s;
+}
+.alertaItem::before{
+  content: '';
+  width: 50%;
+  height: 2px;
+  background-color: black;
+  position: absolute;
+  top: 2rem;
+}

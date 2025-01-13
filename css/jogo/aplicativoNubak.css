@@ -1,0 +1,77 @@
+.sairnubank{
+  top: 1rem;
+}
+
+
+
+.nubank{
+  background-color: blueviolet;
+  padding: 0;
+  padding-top: 4rem;
+  width: 101%;
+}
+
+.nubank img{
+  width: 1.5rem;
+  height:  1.5rem;
+  display: block;
+}
+
+.footerNubank{
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  padding: 0 1.5rem;
+  padding-bottom: 1em;
+  align-items: center;height: 6rem;
+}
+.footerNubankLadoDireito{
+  display: flex;
+  justify-content: end;
+  gap: 1rem;
+
+}
+
+.telaInicialNubank{
+  height: 89%;
+  background-color: rgb(255, 255, 255);
+  border-bottom-right-radius:2rem ;
+  border-bottom-left-radius:2rem ;
+
+}
+
+.usuario{
+  background-color: rgb(170, 53, 249);
+  height: 3rem;
+  width: 3rem;
+  background-image:  url(/img/do-utilizador.png);
+  background-size: 1.5rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+}
+
+.contaTela{
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-between;
+  padding: 1rem 1rem 0 1rem;
+}
+.contaTela span{
+  padding-left: .5rem;
+  font-size: 1.5rem;
+}
+
+.textoMudar{
+  color: black;
+}
+
+
+#dinheiro{
+  color: rgb(0, 0, 0);
+}
+
+
+.textodinheiro{
+  height: 1px;
+  padding-left: 1.5rem;
+}

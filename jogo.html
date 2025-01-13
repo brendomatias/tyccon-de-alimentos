@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/css/jogo/celular.css">
+</head>
+
+<body class="fundoMudarCorC">
+  <div class="celular">
+    <span class="borda bordaEscura"></span>
+    <button onclick="ligarDesliogar()" class="fundoMudarCorE ligar"></button>
+    <span class="telaDesligar"></span>
+    <div class="inf">
+      <div class="inf-E">
+        <span id="hora">00:00</span>
+        <img src="" alt="">
+        <img src="" alt="">
+      </div>
+      <div class="inf-D">
+        <img class="imginf" src="/img/wi-fi.png" alt="">
+        <img class="imginf" src="/img/bateria (1).png" alt="">
+      </div>
+    </div>
+    <div class="fabricas telasJogos  configuracoes">
+      <button onclick="sairAplicativos()" class="sairAplicativos"></button>
+      <div class="FabricaItes"></div>
+    </div>
+    <div class="fabricas telasJogos configuracoes">
+      <button onclick="sairAplicativos()" class="sairAplicativos"></button>
+      <h1>Loja</h1>
+      <div class="FabricaLojas"></div>
+    </div>
+    <div class="telasJogos  configuracoes">
+      <button onclick="sairAplicativos()" class="sairAplicativos"></button>
+      <button onclick="voltarAplicativos()" class="voltarAplicativo"></button>
+
+      <h1>Upgrades</h1>
+      <div onclick="escolhaUpgrades(0)" class="opcoesUpgrades">
+        <h2> Upgrades de quantidade</h2>
+        <p>nessa area podera comprar melhorias para aumentar a quantidade de venda de itens</p>
+      </div>
+      <div onclick="escolhaUpgrades(1)" class="opcoesUpgrades">
+        <h2> Upgrades de tempo</h2>
+        <p>nessa area podera comprar melhorias para diminuir o tempo de preparo de itens</p>
+      </div>
+      <div class="divupgrades"></div>
+      <div class="divupgradesTempo"></div>
+    </div>
+    <div class="telasJogos  configuracoes">
+      <button onclick="sairAplicativos()" class="sairAplicativos"></button>
+      <h1>configurações</h1>
+      <div class="mudarCor">
+        <button onclick="mudarCorFundo()" class="buttaoMudarCor"></button>
+        <p>mudar cor do fundo</p>
+      </div>
+    </div>
+    <div class="telasJogos  configuracoes nubank ">
+      <button onclick="sairAplicativos()" class="sairnubank sairAplicativos"></button>
+      <div class="footerNubank">
+        <span class="usuario"></span>
+        <div class="footerNubankLadoDireito">
+          <img src="/img/fechar-o-olho (1).png" alt="">
+          <img src="/img/sinal-de-interrogacao.png" alt="">
+          <img src="/img/e-mail.png" alt="">
+        </div>
+        <p>Olá player</p>
+      </div>
+      <div class="fundoMudarCorC telaInicialNubank">
+        <div class="contaTela">
+          <span class="textoMudarCor">conta</span>
+          <img src="" alt="">
+        </div>
+        <p class="textoMudarCor textodinheiro">R$:<span class="textoMudarCor" id="dinheiro"></span></p>
+      </div>
+    </div>
+    <div class="wallpaper telasJogos  configuracoes">
+      <button onclick="sairAplicativos()" class=" sairAplicativos"></button>
+      <div class="wallpaper1"></div>
+      <div class="wallpaper2">
+      </div>
+    </div>
+    <div class="tela-opcoes">
+      <h1>Aplicativos</h1>
+      <div class="opcoesObjetos">
+        <div>
+          <button onclick="opcoes(0)" id="vender" class="buttoesOpcoes"></button>
+          <p class="nomeAplicativo">vender</p>
+        </div>
+        <div>
+          <button onclick="opcoes(1)" id="comprar" class="buttoesOpcoes"></button>
+          <p class="nomeAplicativo">comprar</p>
+        </div>
+        <div>
+          <button onclick="opcoes(2)" id="upgrade" class="buttoesOpcoes"></button>
+          <p class="nomeAplicativo">upgrade</p>
+        </div>
+        <div>
+          <button onclick="opcoes(3)" id="sobre" class="buttoesOpcoes"></button>
+          <p class="nomeAplicativo">configurações</p>
+        </div>
+        <div>
+          <button onclick="opcoes(4)" id="nubank" class="buttoesOpcoes"></button>
+          <p class="nomeAplicativo">nubak</p>
+        </div>
+        <div>
+          <button onclick="opcoes(5)" id="wallpaper" class="buttoesOpcoes"></button>
+          <p class="nomeAplicativo">wallpaper</p>
+
+        </div>
+      </div>
+    </div>
+
+
+
+    <script src="/script/scriptiJogar.js"></script>
+</body>
+
+</html>
